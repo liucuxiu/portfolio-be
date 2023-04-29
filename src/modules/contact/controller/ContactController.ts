@@ -9,10 +9,9 @@ export class ContactController {
 
   public async createContact(req: any, res: any): Promise<any> {
     const contactDto = req.body
-    console.log(contactDto)
     const result = await this.contactService.createContact(contactDto)
 
-    res.send('done')
+    res.send(result)
 
   }
 }

@@ -9,6 +9,6 @@ const contactService = new ContactService(contactRepo)
 const contactController = new ContactController(contactService)
 
 contactService.addObserver(new DiscordService())
-contactService.addObserver(new EmailService())
+contactService.addObserver(EmailService.getInstance())
 
 export { contactController }
