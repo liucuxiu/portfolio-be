@@ -2,7 +2,7 @@ import express, { Express, Request, Response } from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors'
 import { contactRouter } from './modules/contact/route/contact.route';
-import { EmailService } from './modules/notification/email/EmailService';
+import { EmailService } from './modules/notification/service/impl/email/EmailService';
 
 dotenv.config();
 

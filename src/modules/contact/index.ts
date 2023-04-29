@@ -1,8 +1,8 @@
 import { ContactController } from './controller/ContactController';
 import { ContactService } from './service/ContactService';
 import { MongoContactRepo } from './repo/impl/MongoContactRepo';
-import { DiscordService } from '../notification/discord/DiscordService';
-import { EmailService } from '../notification/email/EmailService';
+import { DiscordService } from '../notification/service/impl/discord/DiscordService';
+import { EmailService } from '../notification/service/impl/email/EmailService';
 
 const contactRepo = new MongoContactRepo();
 const contactService = new ContactService(contactRepo)

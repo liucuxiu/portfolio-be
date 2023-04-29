@@ -1,4 +1,4 @@
-import { INotificationService } from '../NotificationService';
+import { INotificationService } from '../../NotificationService';
 import nodemailer from 'nodemailer';
 
 export class EmailService implements INotificationService {

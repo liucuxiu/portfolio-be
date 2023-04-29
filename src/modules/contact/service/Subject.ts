@@ -1,4 +1,4 @@
-import { INotificationService } from '../../notification/NotificationService';
+import { INotificationService } from '../../notification/service/NotificationService';
 
 export abstract class Subject {
   private observerList: INotificationService[]= []
