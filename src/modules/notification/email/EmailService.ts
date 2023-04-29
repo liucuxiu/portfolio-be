@@ -32,7 +32,6 @@ export class EmailService implements INotificationService {
     });
   }
 
-  //SEND MAIL
   async sendMail(contactDto: any) {
     return await this.transporter
       .sendMail({
@@ -55,12 +54,10 @@ export class EmailService implements INotificationService {
       });
   }
 
-  //VERIFY CONNECTION
   async verifyConnection() {
     return this.transporter.verify();
   }
 
-  //CREATE TRANSPORTER
   getTransporter() {
     return this.transporter;
   }
